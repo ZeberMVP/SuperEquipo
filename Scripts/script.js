@@ -1,10 +1,10 @@
-document.querySelector("form").addEventListener("onmouseout", function (event) {
+document.querySelector("form").addEventListener("onclick", function (event) {
 
     event.preventDefault();// parar envío
     const nombre = event.target.nombre.value;
     let validated = true;
 
-    if (nombre.length < 5) {
+    if (nombre.length < 10) {
         alert("Nombre muy corto");
         validated = false;
     }
